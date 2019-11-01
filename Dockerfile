@@ -1,6 +1,6 @@
 FROM openwhisk/dockerskeleton
 
-ENV IBMCLOUD_CLI_VERSION=0.19.0
+ENV IBMCLOUD_CLI_VERSION=0.20.0
 
 RUN cd /tmp \
 && wget -q http://bluemix-cli-build.mybluemix.net/builds/ibmcloud-cli-installer/release-${IBMCLOUD_CLI_VERSION}/lastgoodbuild/IBM_Cloud_CLI_amd64.tar.gz \
