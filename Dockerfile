@@ -7,6 +7,10 @@ RUN cd /tmp \
 && wget -q http://public.dhe.ibm.com/cloud/bluemix/cli/bluemix-cli/${IBMCLOUD_CLI_VERSION}/IBM_Cloud_CLI_${IBMCLOUD_CLI_VERSION}_amd64.tar.gz \
 && tar xvf IBM_Cloud_CLI_${IBMCLOUD_CLI_VERSION}_amd64.tar.gz \
 && Bluemix_CLI/install_bluemix_cli \
+&& ibmcloud plugin install dev \
+&& ibmcloud plugin install container-registry \
+&& ibmcloud plugin install container-service \
+&& ibmcloud plugin install cloud-functions \
 && ibmcloud plugin install schematics \
 && rm -fr * 
 
