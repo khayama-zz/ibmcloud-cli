@@ -7,11 +7,19 @@ RUN cd /tmp \
 && wget -q http://public.dhe.ibm.com/cloud/bluemix/cli/bluemix-cli/${IBMCLOUD_CLI_VERSION}/IBM_Cloud_CLI_${IBMCLOUD_CLI_VERSION}_amd64.tar.gz \
 && tar xvf IBM_Cloud_CLI_${IBMCLOUD_CLI_VERSION}_amd64.tar.gz \
 && Bluemix_CLI/install_bluemix_cli \
-&& ibmcloud plugin install dev \
 && ibmcloud plugin install container-registry \
 && ibmcloud plugin install container-service \
+&& ibmcloud plugin install dev \
 && ibmcloud plugin install cloud-functions \
+&& ibmcloud plugin install cloud-internet-services \
+&& ibmcloud plugin install cloud-databases \
+&& ibmcloud plugin install key-protect \
+&& ibmcloud plugin install doi \
+&& ibmcloud plugin install cloud-object-storage \
+&& ibmcloud plugin install power-iaas \
+&& ibmcloud plugin install vpc-infrastructure \
 && ibmcloud plugin install schematics \
+&& ibmcloud plugin install cloud-dns-services/dns \
 && rm -fr * 
 
 RUN ibmcloud config --color false
