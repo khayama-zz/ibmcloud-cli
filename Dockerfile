@@ -19,7 +19,6 @@ RUN cd /tmp \
 && ibmcloud plugin install power-iaas \
 && ibmcloud plugin install vpc-infrastructure \
 && ibmcloud plugin install schematics \
-&& ibmcloud plugin install cloud-dns-services/dns \
 && rm -fr * 
 
 RUN ibmcloud config --color false
