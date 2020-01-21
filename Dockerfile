@@ -1,7 +1,7 @@
 FROM openwhisk/dockerskeleton
 
 ENV IBMCLOUD_CLI_VERSION=0.21.0
-ENV SOFTLAYER_CLI_VERSION=5.8.3
+ENV SOFTLAYER_CLI_VERSION=5.8.4
 
 RUN cd /tmp \
 && wget -q http://public.dhe.ibm.com/cloud/bluemix/cli/bluemix-cli/${IBMCLOUD_CLI_VERSION}/IBM_Cloud_CLI_${IBMCLOUD_CLI_VERSION}_amd64.tar.gz \
