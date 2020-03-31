@@ -9,7 +9,6 @@ RUN cd /tmp \
 && Bluemix_CLI/install_bluemix_cli \
 && ibmcloud plugin install container-registry \
 && ibmcloud plugin install container-service \
-&& ibmcloud plugin install dev \
 && ibmcloud plugin install cloud-functions \
 && ibmcloud plugin install cloud-internet-services \
 && ibmcloud plugin install cloud-databases \
